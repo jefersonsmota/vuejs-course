@@ -4,22 +4,22 @@ export default {}
 
 <template>
   <header class="banner">
+    <img src="../assets/images/logo.svg" alt="Logo do Cookin' UP" class="logo">
     <div class="apresentacao">
-      <img src="../assets/images/logo.svg" alt="Logo do Cookin' UP" class="logo">
+      <img src="../assets/images/foto-banner.png" alt="Foto de uma mulher cozinhando" class="foto-banner">
+      <p class="cabecalho-lg frase-cabecalho">
+        <span class="texto-verde">Um banquete de ideias para despertar o
+          chef que há em você!</span>
+      </p>
+    
+      <p class="subtitulo-lg">
+        Explore novas receitas todos os dias com os ingredintes que estão ao
+        seu alcance!
+      </p>
+    
     </div>
   </header>
 
-  <p class="cabecalho-lg frase-cabecalho">
-    <span class="texto-verde">Um banquete de ideias para despertar o
-      chef que há em você!</span>
-  </p>
-
-  <p class="subtitulo-lg">
-    Explore novas receitas todos os dias com os ingredintes que estão ao
-    seu alcance!
-  </p>
-
-  <img src="../assets/images/foto-banner.png" alt="Foto de uma mulher cozinhando" class="foto-banner">
 </template>
 
 <style scoped>
@@ -33,6 +33,9 @@ export default {}
   column-gap: 3.25rem;
 }
 
+.apresentacao {
+  align-content: left;
+}
 .logo {
   height: 4.5rem;
   margin-bottom: 3rem;
@@ -47,7 +50,8 @@ export default {}
 }
 
 .foto-banner {
-  width: 35rem;
+  width: 15rem;
+  float: left;
 }
 
 @media only screen and (max-width: 1300px) {
